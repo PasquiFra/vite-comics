@@ -6,7 +6,7 @@ export default {
 </script>
 
 <template>
-    <footer>
+    <footer id="footer-top">
         <div class="container">
 
             <h1>footer top </h1>
@@ -15,7 +15,7 @@ export default {
     </footer>
 </template>
 
-<style>
+<style scoped>
 footer {
     background-color: dodgerblue;
 

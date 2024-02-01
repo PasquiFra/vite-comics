@@ -17,11 +17,11 @@ export default {
 </script>
 
 <template>
-  <AppHeader class="container" />>
+  <AppHeader />
   <AppMain />
   <AppFooterTop />
-  <AppFooterCenter class="container" />
-  <AppFooterBottom class="container" />
+  <AppFooterCenter />
+  <AppFooterBottom />
 </template>
 
 <style>
@@ -42,7 +42,6 @@ export default {
 
 .flex {
   display: flex;
-  flex-wrap: nowrap;
   flex-grow: 0;
   flex-shrink: 0;
 }
@@ -51,5 +50,9 @@ export default {
   text-align: center;
   justify-content: center;
   align-items: center;
+}
+
+.list-setup {
+  list-style-type: none;
 }
 </style>
