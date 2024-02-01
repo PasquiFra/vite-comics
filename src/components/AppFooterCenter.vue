@@ -73,7 +73,7 @@ footer {
     padding: 2rem 0;
     height: 400px;
 
-    overflow-y: hidden;
+    overflow: hidden;
 }
 
 nav {

@@ -112,7 +112,7 @@ img {
 
 ul,
 a {
-    height: 100%;
+    height: 100px;
 }
 
 ul a:hover,

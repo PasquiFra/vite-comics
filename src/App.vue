@@ -37,7 +37,6 @@ export default {
 .container {
   width: 1200px;
   margin: 0 auto;
-  border: 1px solid black;
 }
 
 .flex {
