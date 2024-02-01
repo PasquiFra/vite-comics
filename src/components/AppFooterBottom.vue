@@ -6,7 +6,12 @@ export default {
 </script>
 
 <template>
-    <h1>footer bottom</h1>
+    <footer id="footer-bottom">
+        <div class="container">
+
+
+        </div>
+    </footer>
 </template>
 
 <style></style>
