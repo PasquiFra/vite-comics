@@ -6,7 +6,23 @@ export default {
 </script>
 
 <template>
-    <h1>main</h1>
+    <main class="flex">
+        <div class="container">
+
+            <h1> --> Content goes here <-- </h1>
+
+        </div>
+    </main>
 </template>
 
-<style></style>
+<style>
+main {
+    background-color: rgb(27, 27, 27);
+
+    height: 125px;
+}
+
+h1 {
+    color: white;
+}
+</style>

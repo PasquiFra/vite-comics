@@ -18,8 +18,8 @@ export default {
 
 <template>
   <AppHeader class="container" />>
-  <AppMain class="container" />
-  <AppFooterTop class="container" />
+  <AppMain />
+  <AppFooterTop />
   <AppFooterCenter class="container" />
   <AppFooterBottom class="container" />
 </template>
