@@ -15,7 +15,7 @@ export default {
     </main>
 </template>
 
-<style>
+<style scoped>
 main {
     background-color: rgb(27, 27, 27);
 
