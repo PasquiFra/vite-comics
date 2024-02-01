@@ -6,7 +6,19 @@ export default {
 </script>
 
 <template>
-    <h1>footer top </h1>
+    <footer>
+        <div class="container">
+
+            <h1>footer top </h1>
+
+        </div>
+    </footer>
 </template>
 
-<style></style>
+<style>
+footer {
+    background-color: dodgerblue;
+
+    height: 125px;
+}
+</style>
