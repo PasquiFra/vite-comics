@@ -9,7 +9,7 @@ export default {
     <main class="flex">
         <div class="container">
 
-            <h1> --> Content goes here <-- </h1>
+            <div id="current-series"></div>
 
         </div>
     </main>

@@ -3,6 +3,114 @@
 export default {
     name: "Footer center",
     data: () => ({
+        comixLinks: [
+            {
+                text: 'characters',
+                url: '#'
+            },
+            {
+                text: 'comics',
+                url: '#'
+            },
+            {
+                text: 'movies',
+                url: '#'
+            },
+            {
+                text: 'TV',
+                url: '#'
+            },
+            {
+                text: 'games',
+                url: '#'
+            },
+            {
+                text: 'videos',
+                url: '#'
+            },
+            {
+                text: 'news',
+                url: '#'
+            },
+        ],
+        shopLinks: [
+            {
+                text: 'shop DC',
+                url: '#'
+            },
+            {
+                text: 'shop DC collectibles',
+                url: '#'
+            },
+        ],
+        DCLinks: [
+            {
+                text: 'terms of use',
+                url: '#'
+            },
+            {
+                text: 'privacy policy (new)',
+                url: '#'
+            },
+            {
+                text: 'ad choices',
+                url: '#'
+            },
+            {
+                text: 'advertising',
+                url: '#'
+            },
+            {
+                text: 'jobs',
+                url: '#'
+            },
+            {
+                text: 'subscriptions',
+                url: '#'
+            },
+            {
+                text: 'talent workshops',
+                url: '#'
+            },
+            {
+                text: 'CPSC certificates',
+                url: '#'
+            },
+            {
+                text: 'ratings',
+                url: '#'
+            },
+            {
+                text: 'shop help',
+                url: '#'
+            },
+            {
+                text: 'contact us',
+                url: '#'
+            },
+        ],
+        sitesLinks: [
+            {
+                text: 'DC',
+                url: '#'
+            },
+            {
+                text: 'MAD magazine',
+                url: '#'
+            },
+            {
+                text: 'DC kids',
+                url: '#'
+            },
+            {
+                text: 'DC universe',
+                url: '#'
+            },
+            {
+                text: 'DC power visa',
+                url: '#'
+            },
+        ],
     })
 }
 </script>
@@ -14,54 +122,35 @@ export default {
             <nav class="flex ">
                 <h3>dc comics</h3>
                 <ul>
-                    <li><a href="#">characters</a></li>
-                    <li><a href="#">comics</a></li>
-                    <li><a href="#">movies</a></li>
-                    <li><a href="#">TV</a></li>
-                    <li><a href="#">games</a></li>
-                    <li><a href="#">videos</a></li>
-                    <li><a href="#">news</a></li>
+                    <li v-for="link in comixLinks"><a :href="link.url">{{ link.text }}</a></li>
                 </ul>
             </nav>
 
             <nav class="flex">
                 <h3>shop</h3>
                 <ul>
-                    <li><a href="#">shop DC</a></li>
-                    <li><a href="#">shop DC collectibles</a></li>
+                    <li v-for="link in shopLinks"><a :href="link.url">{{ link.text }}</a></li>
                 </ul>
             </nav>
 
             <nav class="flex">
                 <h3>dc</h3>
                 <ul>
-                    <li><a href="#">terms of use</a></li>
-                    <li><a href="#">privacy policy (new)</a></li>
-                    <li><a href="#">ad choices</a></li>
-                    <li><a href="#">advertising</a></li>
-                    <li><a href="#">jobs</a></li>
-                    <li><a href="#">subscriptions</a></li>
-                    <li><a href="#">talent workshops</a></li>
-                    <li><a href="#">CPSC certificates</a></li>
-                    <li><a href="#">retings</a></li>
-                    <li><a href="#">shop help</a></li>
-                    <li><a href="#">contact us</a></li>
+                    <li v-for="link in DCLinks"><a :href="link.url">{{ link.text }}</a></li>
                 </ul>
             </nav>
 
             <nav class="flex">
                 <h3>sites</h3>
                 <ul>
-                    <li><a href="#">DC</a></li>
-                    <li><a href="#">MAD magazine</a></li>
-                    <li><a href="#">DC kids</a></li>
-                    <li><a href="#">DC universe</a></li>
-                    <li><a href="#">DC power visa</a></li>
+                    <li v-for="link in sitesLinks"><a :href="link.url">{{ link.text }}</a></li>
                 </ul>
             </nav>
+
             <figure>
                 <img src="../assets/img/dc-logo-bg.png" alt="DC-Logo">
             </figure>
+
         </div>
     </footer>
 </template>
@@ -101,14 +190,18 @@ h3 {
 
 li {
     text-transform: capitalize;
-    list-style-type: none
+    list-style-type: none;
+    padding: 2px 0;
 }
 
 a {
     text-decoration: none;
+    text-transform: capitalize;
+
     color: rgba(169, 169, 169, 0.705);
     font-size: 0.8rem;
     font-weight: 500;
+
 
     &:hover {
         color: dodgerblue;
