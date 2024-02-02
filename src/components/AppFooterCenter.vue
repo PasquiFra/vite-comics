@@ -1,7 +1,9 @@
 <script>
 
 export default {
-    name: "Footer center"
+    name: "Footer center",
+    data: () => ({
+    })
 }
 </script>
 
@@ -64,7 +66,7 @@ export default {
     </footer>
 </template>
 
-<style scoped>
+<style lang="scss" scoped>
 footer {
     background-image: url(../assets/img/footer-bg.jpg);
     background-repeat: no-repeat;
@@ -107,11 +109,12 @@ a {
     color: rgba(169, 169, 169, 0.705);
     font-size: 0.8rem;
     font-weight: 500;
+
+    &:hover {
+        color: dodgerblue;
+    }
 }
 
-a:hover {
-    color: dodgerblue;
-}
 
 figure {
     height: 100%;

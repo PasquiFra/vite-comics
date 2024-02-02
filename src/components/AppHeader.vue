@@ -80,7 +80,7 @@ export default {
     </header>
 </template>
 
-<style scoped>
+<style lang="scss" scoped>
 header {
     height: 100px;
 }
@@ -107,18 +107,25 @@ img {
 
     color: rgba(48, 48, 48, 0.788);
 
-    margin: 0 1rem;
+    margin: 0 0.75rem;
 }
 
 ul,
 a {
     height: 100px;
+    border-bottom: 5px solid transparent;
+    transition: border-bottom 0.3s;
+
+    &:hover,
+    &:active {
+
+        border-bottom: 5px solid dodgerblue;
+        color: dodgerblue;
+    }
 }
 
-ul a:hover,
-ul a:active {
 
-    border-bottom: 5px solid dodgerblue;
-    color: dodgerblue;
+.list-setup {
+    list-style-type: none;
 }
 </style>

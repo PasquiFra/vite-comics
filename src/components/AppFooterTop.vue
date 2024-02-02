@@ -9,13 +9,13 @@ export default {
     <footer id="footer-top">
         <div class="container">
 
-            <h1>footer top </h1>
+
 
         </div>
     </footer>
 </template>
 
-<style scoped>
+<style lang="scss" scoped>
 footer {
     background-color: dodgerblue;
 

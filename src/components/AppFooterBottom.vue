@@ -30,14 +30,10 @@ export default {
     </footer>
 </template>
 
-<style scoped>
+<style lang="scss" scoped>
 footer {
     height: 100px;
     background-color: rgb(56, 56, 56);
-}
-
-.justify-between {
-    justify-content: space-between;
 }
 
 nav {
