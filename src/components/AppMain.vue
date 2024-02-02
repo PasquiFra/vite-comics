@@ -1,28 +1,25 @@
 <script>
+import AppCurrentSeries from './AppCurrentSeries.vue'
 
 export default {
-    name: "Main"
+    name: "Main",
+    components: {
+        AppCurrentSeries
+    },
+    props: {
+        books: Array,
+    }
 }
 </script>
 
 <template>
     <main class="flex">
-        <div class="container">
-
-            <div id="current-series"></div>
-
-        </div>
+        <AppCurrentSeries :books="books" />
     </main>
 </template>
 
 <style lang="scss" scoped>
 main {
-    background-color: rgb(27, 27, 27);
-
-    height: 125px;
-}
-
-h1 {
-    color: white;
+    background-color: rgb(31, 30, 30);
 }
 </style>

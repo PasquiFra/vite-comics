@@ -116,12 +116,13 @@ a {
     border-bottom: 5px solid transparent;
     transition: border-bottom 0.3s;
 
-    &:hover,
-    &:active {
+}
 
-        border-bottom: 5px solid dodgerblue;
-        color: dodgerblue;
-    }
+a:hover,
+a:active {
+
+    border-bottom: 5px solid dodgerblue;
+    color: dodgerblue;
 }
 
 
